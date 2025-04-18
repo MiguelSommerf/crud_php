@@ -8,7 +8,7 @@
 <?php } else {?>
     <?php $query = "SELECT * FROM armas"; $consulta = mysqli_query($connect, $query);?>
     <?php while($rows = mysqli_fetch_array($consulta)){?>
-    <?php if($rows['id_arma'] == $_GET['editar']){?>
+    <?php if($rows['id_arma'] === $_GET['editar']){?>
         <h1>Editar arma</h1>
         <form class="form-control" action="back/edita_arma.php" method="post">
             <h3>Editar arma</h3>
