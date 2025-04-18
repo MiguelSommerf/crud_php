@@ -14,11 +14,11 @@
         <div class="container">
             <img id="imagem-logo" src="./img/witcher-logo.png" title="logo" alt="logo">
             <div id="menu">
-                <a href="?page=armas">Armas</a>
-                <a href="?page=armaduras">Armaduras</a>
-                <a href="?page=bruxos">Bruxos</a>
-                <a href="?page=posse">Posse</a>
-                <a href="?page=cadastro">Aliste-se!</a>
+                <a href="?page=armas" style="color:white;">Armas</a>
+                <a href="?page=armaduras" style="color:white;">Armaduras</a>
+                <a href="?page=bruxos" style="color:white;">Bruxos</a>
+                <a href="?page=posse" style="color:white;">Posse</a>
+                <a href="?page=cadastro" style="color:white;">Aliste-se!</a>
             </div>
         </div>
     </header>
