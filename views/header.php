@@ -18,7 +18,14 @@
                 <a href="?page=armaduras" style="color:white;">Armaduras</a>
                 <a href="?page=bruxos" style="color:white;">Bruxos</a>
                 <a href="?page=posse" style="color:white;">Posse</a>
-                <a href="?page=cadastro" style="color:white;">Aliste-se!</a>
+                <a href="?page=cadastro_bruxo" style="color:white;">Aliste-se!</a>
+                <?php
+                if(session_start() === PHP_SESSION_NONE){
+                    session_start();
+                } 
+                if(@$_SESSION['id_usuario']) { ?>
+                    <a href="back/logout.php" style="color:white;">Logout</a>
+                <?php } ?>
             </div>
         </div>
     </header>

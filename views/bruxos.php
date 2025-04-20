@@ -1,4 +1,4 @@
-<a class="btn btn-success" href="?page=cadastro">Inserir novo bruxo</a>
+<a class="btn btn-success" href="?page=cadastro_bruxo">Inserir novo bruxo</a>
 <table class="table" id="bruxos">
     <thead>
         <tr>
@@ -39,7 +39,7 @@
             echo "<tr><td>".$rows_bruxo['id_bruxo']."</td>";
             echo "<td>".$rows_bruxo['nome_bruxo']."</td>";
         ?>
-        <td><a class="fa-solid fa-pen-to-square" href='?page=cadastro&editar=<?=$rows_bruxo['id_bruxo'];?>'> EDITAR</a></td>
+        <td><a class="fa-solid fa-pen-to-square" href='?page=cadastro_bruxo&editar=<?=$rows_bruxo['id_bruxo'];?>'> EDITAR</a></td>
         <td><a class="fa-solid fa-trash-can" href='back/deleta.php?id_bruxo=<?=$rows_bruxo['id_bruxo'];?>'> DELETAR</a></td><tr>
         <?php
         }

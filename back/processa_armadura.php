@@ -1,5 +1,17 @@
 <?php
 require_once 'db.php';
+
+if(session_status() === PHP_SESSION_NONE){
+    session_start();
+
+    if(!$_SESSION['id_usuario']){
+        session_destroy();
+        echo "<script>alert('Você precisa estar logado para alterar os dados!')</script>";
+        echo "<script>window.history.back();</script>";
+        exit();
+    }
+}
+
 $nome_armadura = $_POST['nome_armadura'];
 
 $query = "INSERT INTO armaduras (nome_armadura) VALUES (?)";

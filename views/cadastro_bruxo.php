@@ -1,5 +1,5 @@
 <?php if(empty($_GET['editar'])){ ?>
-<form class="form-control" action="back/processa_cadastro.php" method="post">
+<form class="form-control" action="back/processa_bruxo.php" method="post">
     <label class="badge text-bg-dark" for="">Nome Bruxo:</label>
     <input type="text" name="nome_bruxo" id="">
     <button class="btn btn-success" type="submit">Alistar-se</button>

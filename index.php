@@ -13,7 +13,7 @@ switch($page){
     case 'armaduras': require_once 'views/armaduras.php'; break;
     case 'inserir_arma': require_once 'views/inserir_arma.php'; break;
     case 'inserir_armadura': require_once 'views/inserir_armadura.php'; break;
-    case 'cadastro': require_once 'views/cadastro.php'; break;
+    case 'cadastro_bruxo': require_once 'views/cadastro_bruxo.php'; break;
     case 'posse': require_once 'views/inserir_posse.php'; break;
     case 'bruxos': require_once 'views/bruxos.php'; break;
     case 'home': require_once 'views/home.php'; break;
